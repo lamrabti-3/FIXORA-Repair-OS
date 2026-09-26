@@ -1,0 +1,14 @@
+{
+  "name": "FIXORA — Mobile Repair OS",
+  "short_name": "FIXORA",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080a0f",
+  "theme_color": "#080a0f",
+  "orientation": "portrait-primary",
+  "lang": "ar",
+  "dir": "rtl",
+  "description": "إدارة احترافية لورش ومحلات إصلاح الهواتف.",
+  "icons": [{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
