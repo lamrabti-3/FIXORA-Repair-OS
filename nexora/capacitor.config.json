@@ -1,0 +1,6 @@
+{
+  "appId": "com.fixora.mobile",
+  "appName": "FIXORA",
+  "webDir": ".",
+  "server": {"androidScheme": "https"}
+}

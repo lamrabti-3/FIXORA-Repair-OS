@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#080a0f" />
+  <meta name="description" content="FIXORA — Mobile Repair Business OS" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <title>FIXORA</title>
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo"><img src="assets/icon.svg" alt="FIXORA"></div>
+        <div><strong>FIXORA</strong><span>Mobile Repair OS</span></div>
+      </div>
+      <div class="shop-mini">
+        <div class="shop-avatar" id="shop-avatar">F</div>
+        <div><strong id="shop-name-side">My Repair Shop</strong><span id="shop-mode-side">Technician mode</span></div>
+      </div>
+      <nav id="side-nav" class="side-nav"></nav>
+      <button class="side-profile" data-nav="settings"><span class="avatar" id="user-avatar-side">F</span><span><b id="user-name-side">Technician</b><small>الإعدادات</small></span><span class="chev">‹</span></button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="head-left">
+          <button id="menu-btn" class="icon-btn mobile-only" aria-label="القائمة">☰</button>
+          <div><div id="crumb" class="crumb">FIXORA / HOME</div><h1 id="page-title">مركز الصيانة</h1></div>
+        </div>
+        <div class="head-actions">
+          <label class="searchbox"><span>⌕</span><input id="global-search" type="search" placeholder="ابحث عن عميل، جهاز، قطعة…"><kbd>Ctrl K</kbd></label>
+          <button class="icon-btn" id="alerts-btn" aria-label="التنبيهات">◉</button>
+          <button class="btn primary hide-mobile" data-action="new-repair">+ استقبال جهاز</button>
+        </div>
+      </header>
+      <section id="view" class="view"></section>
+    </main>
+
+    <nav id="bottom-nav" class="bottom-nav"></nav>
+    <div id="drawer-overlay" class="overlay hidden"></div>
+    <aside id="drawer" class="drawer"></aside>
+    <div id="modal-root"></div>
+    <div id="toast-root" class="toast-root"></div>
+  </div>
+
+  <script src="src/app.js" defer></script>
+</body>
+</html>
